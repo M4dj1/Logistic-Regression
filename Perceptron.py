@@ -6,7 +6,7 @@ learning_rate = 0.01
 
 def labeling(array) :
     for i in range(pointsnum) :
-        if array[i][0] + array[i][1] - 1 > 0 :
+        if array[i][0] + array[i][1] - 1 > 0 :  # (x1 + x2 - 1 > 0)
             array[i][2] = 1
         else :
             array[i][2] = -1
@@ -52,6 +52,6 @@ print("Number Of Errors", CounterErrors)
 
 #Show Data
 x = np.linspace(-5, 5, 100)
-y = -(p.weights[0][0] / p.weights[0][1]) * x - (p.bias / p.weights[0][1])
+y = -(p.weights[0][0] / p.weights[0][1]) * x - (p.bias / p.weights[0][1])  # (x1(w1) + x2(w2) - 1(w0) = 0) ==> x1 = -(w1/w2)x2 - (bias/w2)
 plt.plot(x, y)
 plt.show()
