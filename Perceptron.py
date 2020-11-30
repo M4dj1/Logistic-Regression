@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+#comment
 pointsnum=300
 learning_rate = 0.01
 
