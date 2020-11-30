@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 pointsnum=300
 learning_rate = 0.01
-#comment
 def labeling(array) :
     for i in range(pointsnum) :
         if array[i][0] + array[i][1] - 1 > 0 :  # (x1 + x2 - 1 > 0)
